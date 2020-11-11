@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>gulp template</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.6.0/tiny-slider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css">
+  </head>
+  <body>
+    <div class="menu">
+      <div class="sub-menu">
+        <nav class="wrapper">
+          <ul class="sub-menu__list">
+            <li class="sub-menu__list__city selectCity"><span>Москва</span>
+              <div class="triangle"></div>
+              <div class="selectCity-modal">
+                <h2 class="selectCity-modal__title-new">Введите название города <button class="closeNewCity"></button></h2>
+                <input class="newCity-input">
+                <label class="city-checkbox-label" id="city-checkbox-label" for="city-checkbox"><span class="city-checkbox-text">Если вашего города нет в списке, оформите </b> доставку через менеджера</span>
+                  <input class="city-checkbox" id="city-checkbox" type="checkbox" name="city-checkbox"><span class="city-checkbox-arrow"></span>
+                </label>
+                <h2 class="selectCity-modal__title">Ваш город <span>Москва</span>?</h2>
+                <div class="selectCity-modal__buttons">
+                  <button class="selectCity-modal__accept">Да</button>
+                  <button class="selectCityChange">Выбрать другой</button>
+                </div>
+              </div>
+            </li>
+            <li>25 точек самовывоза</li>
+            <li><a href="#">Условия доставки</a></li>
+            <li><a href="#">Оптовым клиентам</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="main-menu">
+        <nav class="wrapper">
+          <ul class="main-menu__list">
+            <li class="main-menu__logo-item"><a class="main-menu__list__logo" href="/">Parklon</a><span class="annotation">Игровые коврики для ваших малышей</span><span class="mobile-sub-menu__list__city selectCity"><span>Москва</span>
+                <div class="triangle"></div>
+                <div class="selectCity-modal">
+                  <h2 class="selectCity-modal__title-new">Введите название города <button class="closeNewCity"></button></h2>
+                  <input class="newCity-input">
+                  <label class="city-checkbox-label" id="city-checkbox-label" for="city-checkbox1"><span class="city-checkbox-text">Если вашего города нет в списке, оформите </b> доставку через менеджера</span>
+                    <input class="city-checkbox" id="city-checkbox1" type="checkbox" name="city-checkbox1"><span class="city-checkbox-arrow"></span>
+                  </label>
+                  <h2 class="selectCity-modal__title">Ваш город <span>Москва</span>?</h2>
+                  <div class="selectCity-modal__buttons">
+                    <button class="selectCity-modal__accept">Да</button>
+                    <button class="selectCityChange">Выбрать другой</button>
+                  </div>
+                </div></span></li>
+            <li class="main-menu__back-call-item">
+              <div class="main-menu__list-container">
+                <div class="main-menu__list-title">Бесплатный звонок по России</div>
+                <div class="main-menu__list-sub-title"> <span><a href="tel:88043331432">8 (804) 333-14-32</a></span></div>
+              </div>
+            </li>
+            <li class="main-menu__search">
+              <input class="main-menu-search-input" placeholder="Поиск по сайту...">
+            </li>
+            <li>
+              <div class="main-menu__list-cart">
+                <h2>Ваша корзина</h2>
+                <div class="main-menu__list-cart__content">
+                  <div>Товаров: 1</div>
+                  <div><span>Сумма: <b>5 990 руб.</b></span><a class="cart__link" href="#" title="В корзину">В корзину<span></span></a></div>
+                </div>
+              </div>
+            </li>
+            <li class="mobile-controls">
+              <ul>
+                <li class="mobile-controls__cart"><a href="/checkout.html"><span class="mobile-controls__cart__counter">1</span></a></li>
+                <li class="mobile-controls__burger"><span></span><span></span><span></span></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="mobile-visible expanded-menu" id="expandedMenu">
+        <h2 class="expanded-menu__title">Бесплатный звонок по России</h2><a class="expanded-menu__phone-link" href="tel:88043331432">8 (804) 333-14-32</a><a class="expanded-menu__mail-link" href="mailto:info@parklon.ru">Info@parklon.ru</a>
+      </div>
+      <div class="bottom-menu">
+        <div class="main-menu__search">
+          <input class="main-menu-search-input" placeholder="Поиск по сайту...">
+        </div>
+        <nav>
+          <ul class="bottom-menu__list wrapper">
+            <li><a class="active" href="/catalog.html">Каталог</a></li>
+            <li><a href="/blog.html">Блог</a></li>
+            <li><a href="/faq.html">Вопрос - ответ</a></li>
+            <li><a href="/feedback.html">Отзывы</a></li>
+            <li><a href="#">О компании</a></li>
+            <li><a href="/contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <section class="wrapper section-padding">
+      <h1 class="main-title">Вопрос-ответ</h1>
+      <div class="faq-container">
+        <h3 class="faq-sub-title">Ответы на часто задаваемые вопросы</h3>
+        <div class="faq-rows">
+          <div class="faq-row">
+            <h3 class="faq-row-title">1.Чем коврики отличаются друг от друга?</h3>
+            <div class="faq-row-text">
+              <p>Коврики отличаются друг от друга материалами, типами, размерами, толщиной, дизайнами. Все модели отвечают международным стандартам качества и нашим высоким требованиям к безопасности и комфорту.</p>
+              <p>Prime Living – двухсторонние коврики из пищевого полиэтилена с плёночным рифлённым покрытием. Это самые тонкие коврики с яркими детскими расцветками. Покрытие практичное и выносливое – не впитывает грязь, воду, загрязнения, но иногда не может устоять перед острыми когтями домашних животных.</p>
+              <p>Portable – &nbsp;односторонние портативные коврики из пищевого полиэтилена с плёночным рифлённым покрытием. Сохраняют все свойства Prime Living, но имеют одну полезную опцию – возможность складываться до размера 40х70х12 см. Их удобно хранить дома и брать с собой в поездки.</p>
+              <p>Sillky – это односторонние коврики из пищевого полиэтилена с текстильным рифлённым покрытием. Низ – войлок с прорезиниванием для защиты от скольжения, верх – хлопок с добавлением шёлка и водоотталкивающей пропиткой. Покрытие бархатистое, приятное на ощупь, не впитывает грязь, воду, загрязнения, устойчиво к царапинам. Но его нельзя чистить моющими средствами, так как химические вещества в составе могут оставить разводы и пятна. &nbsp;</p>
+              <p>Sillky Portable – портативные коврики Sillky, которые складываются до размера 40х70х12 см для того, чтобы их было удобно хранить и брать с собой в поездки.</p>
+              <p>Pure Soft – двухсторонние коврики из поливинилхлорида (ПВХ). Это плотное мягкое приятное покрытие, которое обладает повышенной износостойкостью. Не впитывает грязь, воду, загрязнения, устойчиво к царапинам. Коврики прочные и эластичные,&nbsp; от тяжёлой мебели могут остаться вмятины, но со временем поверхность приобретает первоначальный вид. Отличаются сдержанными дизайнерскими расцветками в скандинавском стиле.</p>
+              <p>Bubble – двухсторонние коврики из поливинилхлорида (ПВХ) толщиной 4 см.</p>
+              <p>По свойствам идентичны с Pure Soft, но намного толще и больше. На них комфортно сидеть и лежать на протяжении долгого времени, а также ходить – ножки как будто утопают в мягком приятном покрытии.</p>
+              <p>Mini – двухсторонние коврики из поливинилхлорида (ПВХ) в мини-формате. &nbsp;Благодаря компактному размеру 95x44 см их можно стелить на кухне, на балконе, в коридоре, в спальне возле кровати и в других местах.</p>
+            </div>
+          </div>
+          <div class="faq-row">
+            <h3 class="faq-row-title">2. От чего зависит цена коврика?      </h3>
+            <div class="faq-row-text">
+              <p>Стоимость коврика формируется в зависимости от материалов, размеров, толщины. Самые бюджетные линейки Prime Living и Portable выполненные из пищевого полиэтилена. Они качественные, безопасные, но менее износостойкие.</p>
+              <p>Одна из самых дорогих линеек &nbsp;– Pure Soft из поливинилхлорида (ПВХ). При бережном использовании покупка такого коврика – это инвестиция на многие годы. Для изготовления моделей из ПВХ используется первоклассное сырьё, а &nbsp;само производство – сложный и технологичный процесс. Пожалуй, это самые лучшие игровые коврики на российском рынке.</p>
+            </div>
+          </div>
+          <div class="faq-row">
+            <h3 class="faq-row-title">3.Относятся ли коврики Parklon к безвредной для детского организма продукции?</h3>
+            <div class="faq-row-text">
+              <p>Да. Экологическую безопасность продукции подтвердила всемирно известная сертификация SGS. Специалисты организации протестировали коврики и зафиксировали отсутствие тяжёлых металлов, фенола и формальдегидов. Коврики не вступают в контакт с воздухом, водой и не выделяют в окружающую среду токсические вещества.</p>
+            </div>
+          </div>
+          <div class="faq-row">
+            <h3 class="faq-row-title">4. Для детей какого возраста предназначены игровые коврики?</h3>
+            <div class="faq-row-text">
+              <p>Мамы говорят, что коврик – такая же необходимая покупка перед рождением ребенка, как коляска или пеленальный столик. Это идеальное покрытие для того, чтобы малыш учился ползать и ходить. Коврики без запаха, абсолютно безопасные, а ещё очень красивые – идеальный фон для фотографирования новорождённых.</p>
+              <p>Детям постарше такие коврики тоже понадобятся – на них комфортно играть, рисовать, лежать. Коврик можно постелить возле кровати или в рабочей зоне, чтобы ножкам было тепло и мягко. Даже родители могут использовать Parklon вместо фитнес-ковриков для утренней зарядки или йоги.</p>
+            </div>
+          </div>
+          <div class="faq-row">
+            <h3 class="faq-row-title">5. Имеют ли коврики специфический запах?</h3>
+            <div class="faq-row-text">
+              <p>Благодаря тому, что коврики изготавливаются в соответствии со всеми санитарно-гигиеническими нормами из безопасных качественных материалов, они не имеют химического или какого-либо другого запаха. Но после распаковки может присутствовать запах «нового» – это вызвано тем, что определенное время коврик находился в непроветриваемом состоянии. Достаньте его из упаковки, расстелите на полу и протрите влажной тканью – запах рассеется в течение суток.</p>
+            </div>
+          </div>
+          <div class="faq-row">
+            <h3 class="faq-row-title">6. Как осуществляется оплата и доставка коврика? </h3>
+            <div class="faq-row-text">
+              <p>Мы работаем с компанией СДЭК и Почтой России. Доставляем курьером к вам домой или в пункты самовывоза. Способ оплаты можете выбрать тот, который наиболее удобен для вас – предоплата или наложенный платёж, наличными или картой. Подробнее с условиями и сроками доставки вы можете ознакомиться <a href="/usloviya-dostavki/">здесь</a></p>
+            </div>
+          </div>
+          <div class="faq-row">
+            <h3 class="faq-row-title">7. Можно ли заказать коврик по индивидуальным размерам? </h3>
+            <div class="faq-row-text">
+              <p>Нет. Размеры и расцветки всех ковриков фиксированные, и кастомизировать их нельзя.</p>
+            </div>
+          </div>
+          <div class="faq-row">
+            <h3 class="faq-row-title">8. Как ухаживать за ковриком и как его хранить?</h3>
+            <div class="faq-row-text">
+              <p>Пыль и грязь не впитывается, а остаётся на поверхности, поэтому чтобы поддерживать коврики в чистоте, нужно всего лишь протирать их водой, мыльным раствором или влажными салфетками.</p>
+              <p>Все линейки водонепроницаемые, однако, несмотря на это, мы рекомендуем очищать поверхность сразу же, как только появилось загрязнение. Будьте осторожны с сильнокрасящими веществами как органического, так и неорганического происхождения (ягоды, паста авторучки, восковые мелки, трава, зелёнка, йод).</p>
+              <p>Если вам необходимо на время убрать коврик, его нужно свернуть в рулон. Исключение – модели из ПВХ Pure Soft, Bubble и MINI, их можно заламывать и складывать.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="back-call-modal" id="backCallModal">
+      <div class="back-call-modal__bg"></div>
+      <div class="back-call-modal__content">
+        <div class="back-call-modal__top">
+          <div class="back-call-modal__close modal-close-button">
+            <div class="back-call-modal__close-lines"></div>
+          </div>
+          <div class="back-call-modal__operator">
+            <div class="back-call-modal__operator-img"></div>
+            <div class="back-call-modal__operator-desc">
+              <div class="back-call-modal__operator-title">Заполните форму</div>
+              <div class="back-call-modal__operator-text">Наш менеджер перезвонит <br> и ответит на все ваши вопросы</div>
+            </div>
+          </div>
+        </div>
+        <div class="back-call-modal__main">
+          <div class="back-call-modal__tnx" id="modalTnx">
+            <h2 class="modal__tnx-title">Спасибо за обращение, <span>Екатерина</span></h2>
+            <p class="modal__tnx-text">Ожидайте звонка в ближайшее время</p>
+            <button class="modal-close-button">Закрыть</button>
+          </div>
+          <div class="back-call-modal__inputs" id="modalInputs">
+            <div>
+              <h2 class="back-call-modal__input-title">Ваше имя</h2>
+              <input class="back-call-modal__input validateInput">
+              <div class="validate">Это обязательное поле</div>
+            </div>
+            <div>
+              <h2 class="back-call-modal__input-title">Телефон</h2>
+              <input class="back-call-modal__input validateInput" id="modalPhone">
+              <div class="validate">Это обязательное поле</div>
+            </div>
+            <div>
+              <h2 class="back-call-modal__input-title">Электронная почта</h2>
+              <input class="back-call-modal__input validateInput">
+              <div class="validate">Это обязательное поле</div>
+            </div>
+            <button class="back-call-modal__call" id="sendBackCall">Перезвонить мне</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer__row">
+          <div class="footer__col first">
+            <div class="footer__logo"></div><a class="footer__route" href="#"> <span>Условия доставки</span></a><a class="footer__route footer__route-about" href="#"><span>Оптовым клиентам</span></a>
+            <p class="footer__text copy">2015 — 2020 ©Parklon</p>
+          </div>
+          <div class="footer__col second"><a class="footer__main-route" href="#"> <span>Каталог</span></a><a class="footer__route" href="#"><span>Доставка и оплата</span></a><a class="footer__route" href="#"><span>Гарантии и возврат</span></a><a class="footer__route" href="#"><span>Вопрос-ответ</span></a><a class="footer__route" href="#"> <span>Отзывы</span></a><a class="footer__route" href="#"> <span>Контакты</span></a></div>
+          <div class="footer__col third">
+            <p class="footer__text">Бесплатный звонок по России</p><a class="footer__phone-link" href="tel:88043331432">8 (804) 333-14-32</a><a class="footer__mail" href="mailto:info@parklon.ru">Info@parklon.ru</a>
+            <p class="footer__text">Мы в социальных сетях:</p><a class="footer__fb-route" href="#"><span>Facebook</span></a>
+          </div>
+          <div class="footer__col fourth">
+            <div class="footer__inst"></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.6.0/min/tiny-slider.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

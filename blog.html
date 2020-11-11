@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>gulp template</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.6.0/tiny-slider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css">
+  </head>
+  <body>
+    <div class="menu">
+      <div class="sub-menu">
+        <nav class="wrapper">
+          <ul class="sub-menu__list">
+            <li class="sub-menu__list__city selectCity"><span>Москва</span>
+              <div class="triangle"></div>
+              <div class="selectCity-modal">
+                <h2 class="selectCity-modal__title-new">Введите название города <button class="closeNewCity"></button></h2>
+                <input class="newCity-input">
+                <label class="city-checkbox-label" id="city-checkbox-label" for="city-checkbox"><span class="city-checkbox-text">Если вашего города нет в списке, оформите </b> доставку через менеджера</span>
+                  <input class="city-checkbox" id="city-checkbox" type="checkbox" name="city-checkbox"><span class="city-checkbox-arrow"></span>
+                </label>
+                <h2 class="selectCity-modal__title">Ваш город <span>Москва</span>?</h2>
+                <div class="selectCity-modal__buttons">
+                  <button class="selectCity-modal__accept">Да</button>
+                  <button class="selectCityChange">Выбрать другой</button>
+                </div>
+              </div>
+            </li>
+            <li>25 точек самовывоза</li>
+            <li><a href="#">Условия доставки</a></li>
+            <li><a href="#">Оптовым клиентам</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="main-menu">
+        <nav class="wrapper">
+          <ul class="main-menu__list">
+            <li class="main-menu__logo-item"><a class="main-menu__list__logo" href="/">Parklon</a><span class="annotation">Игровые коврики для ваших малышей</span><span class="mobile-sub-menu__list__city selectCity"><span>Москва</span>
+                <div class="triangle"></div>
+                <div class="selectCity-modal">
+                  <h2 class="selectCity-modal__title-new">Введите название города <button class="closeNewCity"></button></h2>
+                  <input class="newCity-input">
+                  <label class="city-checkbox-label" id="city-checkbox-label" for="city-checkbox1"><span class="city-checkbox-text">Если вашего города нет в списке, оформите </b> доставку через менеджера</span>
+                    <input class="city-checkbox" id="city-checkbox1" type="checkbox" name="city-checkbox1"><span class="city-checkbox-arrow"></span>
+                  </label>
+                  <h2 class="selectCity-modal__title">Ваш город <span>Москва</span>?</h2>
+                  <div class="selectCity-modal__buttons">
+                    <button class="selectCity-modal__accept">Да</button>
+                    <button class="selectCityChange">Выбрать другой</button>
+                  </div>
+                </div></span></li>
+            <li class="main-menu__back-call-item">
+              <div class="main-menu__list-container">
+                <div class="main-menu__list-title">Бесплатный звонок по России</div>
+                <div class="main-menu__list-sub-title"> <span><a href="tel:88043331432">8 (804) 333-14-32</a></span></div>
+              </div>
+            </li>
+            <li class="main-menu__search">
+              <input class="main-menu-search-input" placeholder="Поиск по сайту...">
+            </li>
+            <li>
+              <div class="main-menu__list-cart">
+                <h2>Ваша корзина</h2>
+                <div class="main-menu__list-cart__content">
+                  <div>Товаров: 1</div>
+                  <div><span>Сумма: <b>5 990 руб.</b></span><a class="cart__link" href="#" title="В корзину">В корзину<span></span></a></div>
+                </div>
+              </div>
+            </li>
+            <li class="mobile-controls">
+              <ul>
+                <li class="mobile-controls__cart"><a href="/checkout.html"><span class="mobile-controls__cart__counter">1</span></a></li>
+                <li class="mobile-controls__burger"><span></span><span></span><span></span></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="mobile-visible expanded-menu" id="expandedMenu">
+        <h2 class="expanded-menu__title">Бесплатный звонок по России</h2><a class="expanded-menu__phone-link" href="tel:88043331432">8 (804) 333-14-32</a><a class="expanded-menu__mail-link" href="mailto:info@parklon.ru">Info@parklon.ru</a>
+      </div>
+      <div class="bottom-menu">
+        <div class="main-menu__search">
+          <input class="main-menu-search-input" placeholder="Поиск по сайту...">
+        </div>
+        <nav>
+          <ul class="bottom-menu__list wrapper">
+            <li><a class="active" href="/catalog.html">Каталог</a></li>
+            <li><a href="/blog.html">Блог</a></li>
+            <li><a href="/faq.html">Вопрос - ответ</a></li>
+            <li><a href="/feedback.html">Отзывы</a></li>
+            <li><a href="#">О компании</a></li>
+            <li><a href="/contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <section class="wrapper product-page__padding-top blog">
+      <h1 class="main-title">Блог про детские коврики</h1>
+      <div class="blog__table">
+        <div class="blog__main-row"><a class="blog__big-item" href="#">
+            <div class="blog__big-item-img"></div>
+            <div>
+              <h2 class="blog__big-title">Как называется врач, который смотрит в ухо</h2>
+              <h3 class="blog__date">10 марта</h3>
+            </div></a>
+          <div class="blog__items"><a class="blog__item" href="#">
+              <div>
+                <h2 class="blog__big-title">Закономерности речевого развития ребенка дошкольном возрасте</h2>
+                <h3 class="blog__date">10 марта</h3>
+              </div>
+              <div class="blog__item-img"></div></a><a class="blog__item" href="#">
+              <div>
+                <h2 class="blog__small-title">Как выбрать коврик, если у личинки человека аллергия</h2>
+                <h3 class="blog__date">10 марта</h3>
+              </div>
+              <div class="blog__item-img"></div></a><a class="blog__item" href="#">
+              <div>
+                <h2 class="blog__small-title">Быт, хозяйство и обычные взрослые дела — доступный вид отдыха для тех, у кого есть дети</h2>
+                <h3 class="blog__date">10 марта</h3>
+              </div>
+              <div class="blog__item-img"></div></a></div>
+        </div>
+        <div class="blog__main-row"><a class="blog__big-item" href="#">
+            <div class="blog__big-item-img"></div>
+            <div>
+              <h2 class="blog__big-title">Как называется врач, который смотрит в ухо</h2>
+              <h3 class="blog__date">10 марта</h3>
+            </div></a>
+          <div class="blog__items"><a class="blog__item" href="#">
+              <div>
+                <h2 class="blog__big-title">Закономерности речевого развития ребенка дошкольном возрасте</h2>
+                <h3 class="blog__date">10 марта</h3>
+              </div>
+              <div class="blog__item-img"></div></a><a class="blog__item" href="#">
+              <div>
+                <h2 class="blog__small-title">Закономерности речевого развития ребенка дошкольном возрасте</h2>
+                <h3 class="blog__date">10 марта</h3>
+              </div>
+              <div class="blog__item-img"></div></a><a class="blog__item" href="#">
+              <div>
+                <h2 class="blog__small-title">Закономерности речевого развития ребенка дошкольном возрасте</h2>
+                <h3 class="blog__date">10 марта</h3>
+              </div>
+              <div class="blog__item-img"></div></a></div>
+        </div>
+      </div>
+      <div class="pagination"><svg class="disabled pagination-left-arrow" width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19 9L12 16L19 23" stroke="#DCDCDC" stroke-width="2"/>
+</svg>
+        <div>
+          <button class="pagination-button">1 </button>
+          <button class="pagination-button">2 </button>
+          <button class="pagination-button">3</button>
+        </div><svg width="31" class="pagination-right-arrow" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 9L19 16L12 23" stroke="#0079CC" stroke-width="2"/></svg>
+      </div>
+    </section>
+    <div class="back-call-modal" id="backCallModal">
+      <div class="back-call-modal__bg"></div>
+      <div class="back-call-modal__content">
+        <div class="back-call-modal__top">
+          <div class="back-call-modal__close modal-close-button">
+            <div class="back-call-modal__close-lines"></div>
+          </div>
+          <div class="back-call-modal__operator">
+            <div class="back-call-modal__operator-img"></div>
+            <div class="back-call-modal__operator-desc">
+              <div class="back-call-modal__operator-title">Заполните форму</div>
+              <div class="back-call-modal__operator-text">Наш менеджер перезвонит <br> и ответит на все ваши вопросы</div>
+            </div>
+          </div>
+        </div>
+        <div class="back-call-modal__main">
+          <div class="back-call-modal__tnx" id="modalTnx">
+            <h2 class="modal__tnx-title">Спасибо за обращение, <span>Екатерина</span></h2>
+            <p class="modal__tnx-text">Ожидайте звонка в ближайшее время</p>
+            <button class="modal-close-button">Закрыть</button>
+          </div>
+          <div class="back-call-modal__inputs" id="modalInputs">
+            <div>
+              <h2 class="back-call-modal__input-title">Ваше имя</h2>
+              <input class="back-call-modal__input validateInput">
+              <div class="validate">Это обязательное поле</div>
+            </div>
+            <div>
+              <h2 class="back-call-modal__input-title">Телефон</h2>
+              <input class="back-call-modal__input validateInput" id="modalPhone">
+              <div class="validate">Это обязательное поле</div>
+            </div>
+            <div>
+              <h2 class="back-call-modal__input-title">Электронная почта</h2>
+              <input class="back-call-modal__input validateInput">
+              <div class="validate">Это обязательное поле</div>
+            </div>
+            <button class="back-call-modal__call" id="sendBackCall">Перезвонить мне</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer__row">
+          <div class="footer__col first">
+            <div class="footer__logo"></div><a class="footer__route" href="#"> <span>Условия доставки</span></a><a class="footer__route footer__route-about" href="#"><span>Оптовым клиентам</span></a>
+            <p class="footer__text copy">2015 — 2020 ©Parklon</p>
+          </div>
+          <div class="footer__col second"><a class="footer__main-route" href="#"> <span>Каталог</span></a><a class="footer__route" href="#"><span>Доставка и оплата</span></a><a class="footer__route" href="#"><span>Гарантии и возврат</span></a><a class="footer__route" href="#"><span>Вопрос-ответ</span></a><a class="footer__route" href="#"> <span>Отзывы</span></a><a class="footer__route" href="#"> <span>Контакты</span></a></div>
+          <div class="footer__col third">
+            <p class="footer__text">Бесплатный звонок по России</p><a class="footer__phone-link" href="tel:88043331432">8 (804) 333-14-32</a><a class="footer__mail" href="mailto:info@parklon.ru">Info@parklon.ru</a>
+            <p class="footer__text">Мы в социальных сетях:</p><a class="footer__fb-route" href="#"><span>Facebook</span></a>
+          </div>
+          <div class="footer__col fourth">
+            <div class="footer__inst"></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.6.0/min/tiny-slider.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

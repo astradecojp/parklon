@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>gulp template</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.6.0/tiny-slider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css">
+  </head>
+  <body>
+    <div class="menu">
+      <div class="sub-menu">
+        <nav class="wrapper">
+          <ul class="sub-menu__list">
+            <li class="sub-menu__list__city selectCity"><span>Москва</span>
+              <div class="triangle"></div>
+              <div class="selectCity-modal">
+                <h2 class="selectCity-modal__title-new">Введите название города <button class="closeNewCity"></button></h2>
+                <input class="newCity-input">
+                <label class="city-checkbox-label" id="city-checkbox-label" for="city-checkbox"><span class="city-checkbox-text">Если вашего города нет в списке, оформите </b> доставку через менеджера</span>
+                  <input class="city-checkbox" id="city-checkbox" type="checkbox" name="city-checkbox"><span class="city-checkbox-arrow"></span>
+                </label>
+                <h2 class="selectCity-modal__title">Ваш город <span>Москва</span>?</h2>
+                <div class="selectCity-modal__buttons">
+                  <button class="selectCity-modal__accept">Да</button>
+                  <button class="selectCityChange">Выбрать другой</button>
+                </div>
+              </div>
+            </li>
+            <li>25 точек самовывоза</li>
+            <li><a href="#">Условия доставки</a></li>
+            <li><a href="#">Оптовым клиентам</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="main-menu">
+        <nav class="wrapper">
+          <ul class="main-menu__list">
+            <li class="main-menu__logo-item"><a class="main-menu__list__logo" href="/">Parklon</a><span class="annotation">Игровые коврики для ваших малышей</span><span class="mobile-sub-menu__list__city selectCity"><span>Москва</span>
+                <div class="triangle"></div>
+                <div class="selectCity-modal">
+                  <h2 class="selectCity-modal__title-new">Введите название города <button class="closeNewCity"></button></h2>
+                  <input class="newCity-input">
+                  <label class="city-checkbox-label" id="city-checkbox-label" for="city-checkbox1"><span class="city-checkbox-text">Если вашего города нет в списке, оформите </b> доставку через менеджера</span>
+                    <input class="city-checkbox" id="city-checkbox1" type="checkbox" name="city-checkbox1"><span class="city-checkbox-arrow"></span>
+                  </label>
+                  <h2 class="selectCity-modal__title">Ваш город <span>Москва</span>?</h2>
+                  <div class="selectCity-modal__buttons">
+                    <button class="selectCity-modal__accept">Да</button>
+                    <button class="selectCityChange">Выбрать другой</button>
+                  </div>
+                </div></span></li>
+            <li class="main-menu__back-call-item">
+              <div class="main-menu__list-container">
+                <div class="main-menu__list-title">Бесплатный звонок по России</div>
+                <div class="main-menu__list-sub-title"> <span><a href="tel:88043331432">8 (804) 333-14-32</a></span></div>
+              </div>
+            </li>
+            <li class="main-menu__search">
+              <input class="main-menu-search-input" placeholder="Поиск по сайту...">
+            </li>
+            <li>
+              <div class="main-menu__list-cart">
+                <h2>Ваша корзина</h2>
+                <div class="main-menu__list-cart__content">
+                  <div>Товаров: 1</div>
+                  <div><span>Сумма: <b>5 990 руб.</b></span><a class="cart__link" href="#" title="В корзину">В корзину<span></span></a></div>
+                </div>
+              </div>
+            </li>
+            <li class="mobile-controls">
+              <ul>
+                <li class="mobile-controls__cart"><a href="/checkout.html"><span class="mobile-controls__cart__counter">1</span></a></li>
+                <li class="mobile-controls__burger"><span></span><span></span><span></span></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="mobile-visible expanded-menu" id="expandedMenu">
+        <h2 class="expanded-menu__title">Бесплатный звонок по России</h2><a class="expanded-menu__phone-link" href="tel:88043331432">8 (804) 333-14-32</a><a class="expanded-menu__mail-link" href="mailto:info@parklon.ru">Info@parklon.ru</a>
+      </div>
+      <div class="bottom-menu">
+        <div class="main-menu__search">
+          <input class="main-menu-search-input" placeholder="Поиск по сайту...">
+        </div>
+        <nav>
+          <ul class="bottom-menu__list wrapper">
+            <li><a class="active" href="/catalog.html">Каталог</a></li>
+            <li><a href="/blog.html">Блог</a></li>
+            <li><a href="/faq.html">Вопрос - ответ</a></li>
+            <li><a href="/feedback.html">Отзывы</a></li>
+            <li><a href="#">О компании</a></li>
+            <li><a href="/contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <section class="wrapper product-page__padding-top contacts">
+      <h1 class="main-title">Контакты</h1>
+      <p class="contacts-desc"><a href="mailto:info@parklon.ru">info@parklon.ru</a> Адрес склада: Московская область, г. Котельники, Яничкин проезд, д. 7, терминал БД6 <br/> ООО “ДЕМСО” ИНН 2540169414 ОГРН 1112540001221</p>
+      <h2 class="main-title contacts-main-title">Партнеры</h2>
+      <div class="contacts__container" id="contactsPosition" value="moscow">
+        <ul class="dropdown dropdown-cities">
+          <li>Город 
+            <button class="dropdown-item" onclick="drop('drop-cities', 'drop-cities-menu')" onblur="hideDrop('drop-cities', 'drop-cities-menu')" id="drop-cities"><span class="dropdown-active-text">Москва</span>
+              <div class="dropdown-menu" id="drop-cities-menu"><a class="changeContactsCity active" value="moscow">Москва</a><a class="changeContactsCity" value="spb">Спб</a></div>
+            </button>
+          </li>
+        </ul>
+        <div class="contacts__address-map" id="mapPosition"></div>
+        <div class="contacts__address-map" id="map">
+          <div id="cross-close"></div>
+        </div>
+        <div class="spb" id="spb-contacts" style="display: none;">
+          <div class="contacts__address"><img class="contacts__address-img" src="img/contacts2.jpg">
+            <h3 class="contacts__company">Сеть магазинов Детский мир</h3>
+            <h3 class="contacts__address-title" value="spb0" swapTo="map-mobile-2">г. Москва, м. Коломенская, Андропова пр-т, д. 8, ТРЦ «Мегаполис», 3 этаж <span>на карте</span></h3>
+            <div id="map-mobile-2"></div><a class="contacts__phone" href="tel:88002500000">8 (800) 250-00-00</a>
+            <div class="contacts__address-links"><a class="contacts__address-inst" href="#"></a><a class="contacts__address-vk" href="#"></a></div>
+          </div>
+        </div>
+        <div class="moscow" id="moscow-contacts">
+          <div class="contacts__address">
+            <h3 class="contacts__company">ООО «Сиббэби»</h3>
+            <h3 class="contacts__address-title" value="moscow0" swapTo="map-mobile-1">г. Москва, м. Коломенская, Андропова пр-т, д. 8, ТРЦ «Мегаполис», 3 этаж <span>на карте</span></h3>
+            <div id="map-mobile-1"></div><a class="contacts__phone" href="tel:88002500000">8 (800) 250-00-00</a>
+            <div class="contacts__address-links"><a class="contacts__address-link" href="#">www.detmir.ru</a><a class="contacts__address-vk" href="#"></a></div>
+          </div>
+          <div class="contacts__address active"><img class="contacts__address-img" src="img/contacts1.jpg">
+            <h3 class="contacts__company">Сеть магазинов Детский мир</h3>
+            <h3 class="contacts__address-title" value="moscow1" swapTo="map-mobile-0">г. Москва, Другой Адрес <span>на карте</span></h3>
+            <div id="map-mobile-0"></div><a class="contacts__phone" href="tel:88002500000">8 (800) 250-00-01</a>
+            <div class="contacts__address-links"><a class="contacts__address-link" href="#">www.detmir.ru</a><a class="contacts__address-vk" href="#"></a><a class="contacts__address-fb" href="#"></a></div><a class="contacts__address-mail" href="mailto:sales@detmir.ru">sales@detmir.ru</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="back-call-modal" id="backCallModal">
+      <div class="back-call-modal__bg"></div>
+      <div class="back-call-modal__content">
+        <div class="back-call-modal__top">
+          <div class="back-call-modal__close modal-close-button">
+            <div class="back-call-modal__close-lines"></div>
+          </div>
+          <div class="back-call-modal__operator">
+            <div class="back-call-modal__operator-img"></div>
+            <div class="back-call-modal__operator-desc">
+              <div class="back-call-modal__operator-title">Заполните форму</div>
+              <div class="back-call-modal__operator-text">Наш менеджер перезвонит <br> и ответит на все ваши вопросы</div>
+            </div>
+          </div>
+        </div>
+        <div class="back-call-modal__main">
+          <div class="back-call-modal__tnx" id="modalTnx">
+            <h2 class="modal__tnx-title">Спасибо за обращение, <span>Екатерина</span></h2>
+            <p class="modal__tnx-text">Ожидайте звонка в ближайшее время</p>
+            <button class="modal-close-button">Закрыть</button>
+          </div>
+          <div class="back-call-modal__inputs" id="modalInputs">
+            <div>
+              <h2 class="back-call-modal__input-title">Ваше имя</h2>
+              <input class="back-call-modal__input validateInput">
+              <div class="validate">Это обязательное поле</div>
+            </div>
+            <div>
+              <h2 class="back-call-modal__input-title">Телефон</h2>
+              <input class="back-call-modal__input validateInput" id="modalPhone">
+              <div class="validate">Это обязательное поле</div>
+            </div>
+            <div>
+              <h2 class="back-call-modal__input-title">Электронная почта</h2>
+              <input class="back-call-modal__input validateInput">
+              <div class="validate">Это обязательное поле</div>
+            </div>
+            <button class="back-call-modal__call" id="sendBackCall">Перезвонить мне</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer__row">
+          <div class="footer__col first">
+            <div class="footer__logo"></div><a class="footer__route" href="#"> <span>Условия доставки</span></a><a class="footer__route footer__route-about" href="#"><span>Оптовым клиентам</span></a>
+            <p class="footer__text copy">2015 — 2020 ©Parklon</p>
+          </div>
+          <div class="footer__col second"><a class="footer__main-route" href="#"> <span>Каталог</span></a><a class="footer__route" href="#"><span>Доставка и оплата</span></a><a class="footer__route" href="#"><span>Гарантии и возврат</span></a><a class="footer__route" href="#"><span>Вопрос-ответ</span></a><a class="footer__route" href="#"> <span>Отзывы</span></a><a class="footer__route" href="#"> <span>Контакты</span></a></div>
+          <div class="footer__col third">
+            <p class="footer__text">Бесплатный звонок по России</p><a class="footer__phone-link" href="tel:88043331432">8 (804) 333-14-32</a><a class="footer__mail" href="mailto:info@parklon.ru">Info@parklon.ru</a>
+            <p class="footer__text">Мы в социальных сетях:</p><a class="footer__fb-route" href="#"><span>Facebook</span></a>
+          </div>
+          <div class="footer__col fourth">
+            <div class="footer__inst"></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.6.0/min/tiny-slider.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
